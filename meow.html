@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will You Be My Valentine?</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            background-image: url('https://i.imgur.com/00Weuwt.jpg');
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            width: 90%;
+            background: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        h1 {
+            color: red;
+            font-size: 2em;
+        }
+        .buttons {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .btn {
+            font-size: 1.5em;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 10px;
+            width: 200px;
+        }
+        .yes {
+            background-color: red;
+            color: white;
+        }
+        .no {
+            background-color: white;
+            color: red;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Will You Be My Valentine? ❤️</h1>
+        <div class="buttons">
+            <button class="btn yes" onclick="alert('Yay! I love you! ❤️')">Yes</button>
+            <button class="btn no" onclick="handleNoClick()">No</button>
+        </div>
+    </div>
+    <script>
+        let noClickCount = 0;
+        function handleNoClick() {
+            noClickCount++;
+            if (noClickCount === 1) {
+                alert('Please say yes 😢');
+            } else if (noClickCount === 2) {
+                alert('Maan jaa meri Billu 🥺');
+            } else {
+                alert('Cattu sad now, bye 😔');
+            }
+        }
+    </script>
+</body>
+</html>
