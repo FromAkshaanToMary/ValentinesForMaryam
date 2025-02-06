@@ -32,8 +32,9 @@
         .buttons {
             margin-top: 20px;
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
             gap: 15px;
+            justify-content: center;
         }
         .btn {
             font-size: 1.5em;
@@ -46,11 +47,12 @@
         .yes {
             background-color: red;
             color: white;
+            position: relative;
         }
         .no {
             background-color: white;
             color: red;
-            position: absolute;
+            position: relative;
         }
     </style>
 </head>
@@ -58,7 +60,7 @@
     <div class="container">
         <h1>Will You Be My Valentine? ❤️</h1>
         <div class="buttons">
-            <button class="btn yes" onclick="alert('Yay! I love you! ❤️')">Yes</button>
+            <button class="btn yes" onclick="alert('Yay! I love you smol! ❤️')">Yes</button>
             <button class="btn no" onclick="handleNoClick()">No</button>
         </div>
     </div>
